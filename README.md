@@ -7,7 +7,15 @@
 ```
 
 
+#### equals ( = | == | === ) ####
+```
+* var x=5  , var y="5" .   x==y -> true .   x===y -> false
+```
+
+
 #### variables scopes ####
+* global variables : stored iin window object
+* functional variables 
 ``` 
 * java script follows functional scopping not block scopping
 ```
@@ -33,8 +41,25 @@ console(gender);  // runtime exception : gender is reading without write operati
 
 ```
 
+#### IIFE ####
 
-#### equals ( = | == | === ) ####
+**I**mmediately **I**nvoked **F**unction **E**xpression
+
 ```
-* var x=5  , var y="5" .   x==y -> true .   x===y -> false
+ - Always make a variable with in functional scope 
+ - anonymous function
+```
+
+```javascript
+(function() {
+ console.log("hello anand")
+})();     // this anonymous function calling at the same point of declaration - > IIFE  
+```
+
+
+```javascript
+var fun = (function() {        //save funtion to fun variable
+ console.log("hello anand")
+});
+fun(); // calling anonymous function from the reference var
 ```
