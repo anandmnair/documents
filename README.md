@@ -111,3 +111,6 @@ greet(myName);
 
 **Function Scope** : name
 
+
+
+### Javascript Hoisting ###
