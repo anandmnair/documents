@@ -99,13 +99,14 @@ fun(); // calling anonymous function from the reference var
 * Compiler : only allocates the valriable to its scopes (Does not assign)
 * Interpretor : Do the allocations
 
+```js
 var myName="Anand"
 finction greet(name) {
   c=10;
   console.log("Hello " + name)
 }
 greet(myName);
-
+```
 **Global Scope** :  myName ,  greet , c
 **Function Scope** : name
 
