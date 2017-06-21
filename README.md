@@ -108,5 +108,6 @@ finction greet(name) {
 greet(myName);
 ```
 **Global Scope** :  myName ,  greet , c
+
 **Function Scope** : name
 
