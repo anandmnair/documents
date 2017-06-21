@@ -10,10 +10,10 @@ function fun() {
   var x = 10;
   a = 10;
 }
-'x' with in function will store in function sope
 
-'a'  (with out 'var' ) in function will not be part of function scope, it will be part of wiindow object.
+'x' -> function scope : x with in function will store in function sope
 
+'a' -> window scope : a (with out 'var' ) in function will not be part of function scope, it will be part of wiindow object.
 
 ```
 
