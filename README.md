@@ -30,18 +30,18 @@ function fun() {
 * java script follows functional scopping not block scopping
 ```
 ```javascript
-var name="anand"
+var name="anand";
 if(name=="anand") {
-  var gender = "male"
+  var gender = "male";
 }
 console(name);
 console(gender);  // accessable even outside the if scope
 ```
 ```javascript
 function scopeDemo() {
-  var name="anand"
+  var name="anand";
   if(name=="anand") {
-    var gender = "male"
+    var gender = "male";
   }
   console(name);
   console(gender);  // accessable even outside the if scope
@@ -58,7 +58,7 @@ function myFunc() {
   var b=20;
   var func = function() {
     var c=30;
-    console.log(a+b+c)
+    console.log(a+b+c);
   };
   console(a+b);
   func();
@@ -83,14 +83,14 @@ myFunc();
 
 ```javascript
 (function() {
- console.log("hello anand")
+ console.log("hello anand");
 })();     // this anonymous function calling at the same point of declaration - > IIFE  
 ```
 
 
 ```javascript
 var fun = (function() {        //save funtion to fun variable
- console.log("hello anand")
+ console.log("hello anand");
 });
 fun(); // calling anonymous function from the reference var
 ```
@@ -100,10 +100,10 @@ fun(); // calling anonymous function from the reference var
 * Interpretor : Do the allocations
 
 ```js
-var myName="Anand"
+var myName="Anand";
 finction greet(name) {
   c=10;
-  console.log("Hello " + name)
+  console.log("Hello " + name);
 }
 greet(myName);
 ```
