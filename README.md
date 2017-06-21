@@ -51,6 +51,27 @@ console(gender);  // runtime exception : gender is reading without write operati
 
 ```
 
+```js
+
+var a=10;
+function myFunc() {
+  var b=20;
+  var func = function() {
+    var c=30;
+    console.log(a+b+c)
+  };
+  console(a+b);
+  func();
+}
+
+myFunc();
+
+// Output
+// 30  (a+b)
+// 60  (a+b+c)
+
+```
+
 #### IIFE ####
 
 **I**mmediately **I**nvoked **F**unction **E**xpression
@@ -73,3 +94,18 @@ var fun = (function() {        //save funtion to fun variable
 });
 fun(); // calling anonymous function from the reference var
 ```
+
+### Compilation & Interpretation 
+* Compiler : only allocates the valriable to its scopes (Does not assign)
+* Interpretor : Do the allocations
+
+var myName="Anand"
+finction greet(name) {
+  c=10;
+  console.log("Hello " + name)
+}
+greet(myName);
+
+**Global Scope** :  myName ,  greet , c
+**Function Scope** : name
+
